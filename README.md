@@ -1,7 +1,7 @@
 <div style="text-align: center;">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/41df5122-9375-41d6-9497-4cab7a7a2b99/deploy-status)](https://app.netlify.com/sites/m2rsh-beta/deploys)
-
+[![Node.js CI](https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml/badge.svg)](https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml)
 </div>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
