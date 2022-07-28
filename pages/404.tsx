@@ -3,7 +3,7 @@ import styles from "../styles/Error.module.scss";
 
 //*<meta content="https://embed.com/embedimage.png" property="og:image"/>*//
 
-export default function Home() {
+export default function NotFound() {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
         <meta content="#b54842" data-react-helmet="true" name="theme-color"/>
       </Head>
       <div className={styles.container}>
-        <p>Penis</p>
+        <p>404 Not Found</p>
       </div>
     </>
   );
