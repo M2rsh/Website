@@ -1,0 +1,3 @@
+[submodule "pages/api"]
+	path = pages/api
+	url = https://github.com/M2rsh/website-api.git
