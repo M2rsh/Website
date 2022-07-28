@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps }) {
+function M2rshWebsite({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default M2rshWebsite
