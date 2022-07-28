@@ -1,3 +1,3 @@
-[submodule "pages/api/website-api"]
-	path = pages/api/website-api
-	url = https://github.com/M2rsh/website-api
+[submodule "pages/API"]
+	path = pages/API
+	url = https://github.com/M2rsh/website-api.git
