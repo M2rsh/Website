@@ -10,15 +10,17 @@
     "test": "echo balls"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.3.1",
+    "js-confetti": "^0.10.2",
     "next": "^12.2.3",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "react-spring": "^9.5.2",
+    "react-tsparticles": "^2.1.4",
     "sass": "^1.54.1",
     "scss": "^0.2.4"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.14.0",
+    "@netlify/plugin-nextjs": "^4.14.1",
     "@types/react": "^18.0.15",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.3",

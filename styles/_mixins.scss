@@ -1,0 +1,17 @@
+$screen: 600px;
+$background: #171b20;
+$accent: #333333;
+$background-invert: #e8e4df;
+$error: #f99d9d;
+
+@mixin desktop() {
+    @media (min-width: $screen) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: $screen) {
+        @content;
+    }
+}
