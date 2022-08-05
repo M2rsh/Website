@@ -1,7 +1,13 @@
-<div style="text-align: center;">
+<div align="center">
+<h1>Beta Website</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/41df5122-9375-41d6-9497-4cab7a7a2b99/deploy-status)](https://app.netlify.com/sites/m2rsh-beta/deploys)
-[![Node.js CI](https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml/badge.svg)](https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml)
+<a href="https://app.netlify.com/sites/m2rsh-beta/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/41df5122-9375-41d6-9497-4cab7a7a2b99/deploy-status" alt="Netlify Status" />
+</a>
+
+<a href="https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml">
+    <img src="https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml/badge.svg" alt="Node.js CI" />
+</a>
 
 </div>
 
