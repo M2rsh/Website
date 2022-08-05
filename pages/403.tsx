@@ -22,7 +22,7 @@ export default class NotFound extends React.Component {
     return (
       <>
         <Head>
-          <title>404 | Not Found</title>
+          <title>403 | Forbidden</title>
           <meta name="description" content="404 | Not Found" />
           <link rel="icon" href="/favicon-placeholder.png" />
           <meta content="404 | Not Found" property="og:title" />
@@ -33,8 +33,8 @@ export default class NotFound extends React.Component {
         <div className={styles.container}>
 
           <p onClick={this.createParticles} style={{margin: "5px"}}>
-            <span className={styles.error}>404</span> | <span className={styles.errorMessage}>Not Found.</span>
-            <p className={styles.errorMessage} style={{ fontSize: "1rem" }}>This page doesn&apos;t exist.</p>
+            <span className={styles.error}>403</span> | <span className={styles.errorMessage}>Forbidden.</span>
+            <p className={styles.errorMessage} style={{ fontSize: "1rem" }}>You don&apos;t have access to this page.</p>
           </p>
           <button
             className={styles.returnButton}
