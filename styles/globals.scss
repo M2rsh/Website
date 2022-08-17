@@ -5,9 +5,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: $background;
-  color: $background-invert;
+  background-color: $base;
+  color: $text;
 }
+
 
 a {
   color: inherit;
@@ -16,4 +17,10 @@ a {
 
 .container {
   padding: 0 2rem;
+}
+
+.emoji {
+  position: relative;
+  height: 1em;
+  top: 2.5px;
 }

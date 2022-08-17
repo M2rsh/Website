@@ -16,12 +16,12 @@
     user-select: none;
 
     .returnButton {
-        background-color: $background;
-        outline: 1px solid $background-invert;
+        background-color: $base;
+        outline: 1px solid invert($base);
         border-radius: 8px;
         border-width: 0;
         //color: #333333;
-        color: $background-invert;
+        color: invert($base);
         cursor: pointer;
         display: inline-block;
         font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,17 +40,17 @@
         touch-action: manipulation;
 
         &:hover {
-            background-color: $background-invert;
-            color: $background;
+            background-color: $text;
+            color: $base;
         }
     }
 
     .error {
-        color: $error;
+        color: $rose;
         font-weight: bolder;
     }
     .errorMessage {
-        color: $background-invert
+        color: $text;
     }
 }
 
