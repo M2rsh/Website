@@ -10,7 +10,7 @@ export default class Home extends React.Component {
           <meta name="description" content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!" />
           <link rel="icon" href="/favicon-placeholder.png" />
           <meta content="In Development" property="og:title" />
-          <meta content="👷‍♀️ Under Construction" property="og:description" />
+          <meta content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!" property="og:description" />
           <meta content="#b54842" data-react-helmet="true" name="theme-color" />
         </Head>
         <div className={styles.container}>
