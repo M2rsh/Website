@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.scss";
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import lizzyGif from "../public/media/lizzy.gif";
 export default class Home extends React.Component {
   render() {
     return (
@@ -19,7 +20,7 @@ export default class Home extends React.Component {
         <Header />
         <div className={styles.container}>
           <h1>Penis 🤣🤣🤣</h1>
-          <Image src="/media/lizzy.gif" alt="lizzy" width={1200} height={480} className="image"/>
+          <Image src={lizzyGif} alt="lizzy" width={1200} height={480} className="image"/>
         </div>
         <Footer />
       </>
