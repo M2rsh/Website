@@ -20,7 +20,7 @@ export default class Home extends React.Component {
         <Header />
         <div className={styles.container}>
           <h1>Penis 🤣🤣🤣</h1>
-          <Image src={lizzyGif} alt="lizzy" width={1200} height={480} className="image"/>
+          <Image src={lizzyGif} alt="lizzy" width={1200} height={480} className="image" unoptimized={true}/>
         </div>
         <Footer />
       </>
