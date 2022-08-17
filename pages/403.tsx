@@ -24,7 +24,7 @@ export default class NotFound extends React.Component {
         <Head>
           <title>403 | Forbidden</title>
           <meta name="description" content="404 | Not Found" />
-          <link rel="icon" href="/favicon-placeholder.png" />
+          <link rel="icon" href="/favicon.svg" />
           <meta content="404 | Not Found" property="og:title" />
           <meta content="Page not found." property="og:description" />
           <meta content="#b54842" data-react-helmet="true" name="theme-color" />

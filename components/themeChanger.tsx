@@ -1,1 +1,0 @@
-export const nothing = () => ( "Lol this is useless" );
