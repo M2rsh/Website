@@ -16,12 +16,12 @@
     user-select: none;
 
     .returnButton {
-        background-color: $base;
-        outline: 1px solid invert($base);
+        background-color: $surface;
+        outline: 1px solid $text;
         border-radius: 8px;
         border-width: 0;
         //color: #333333;
-        color: invert($base);
+        color: $text;
         cursor: pointer;
         display: inline-block;
         font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -41,7 +41,7 @@
 
         &:hover {
             background-color: $text;
-            color: $base;
+            color: $surface;
         }
     }
 
