@@ -4,13 +4,13 @@ import styles from "../styles/Home.module.scss";
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import lizzyGif from "../public/media/lizzy.gif";
+import lizzyGif from "../public/media/lizzy2.gif";
 export default class Home extends React.Component {
   render() {
     return (
       <>
         <Head>
-          <title>Homepage | M2rsh</title>
+          <title>M2rsh</title>
           <meta name="description" content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!" />
           <link rel="icon" href="/favicon.svg" />
           <meta content="In Development" property="og:title" />
@@ -19,7 +19,11 @@ export default class Home extends React.Component {
         </Head>
         <Header />
         <div className={styles.container}>
-          <Image src={lizzyGif} alt="lizzy" width={1200} height={480} className="image" unoptimized={true}/>
+          <br/>
+          <div style={{ display: "flex", alignItems: "center", alignContent: "center", justifyContent: "center",  }}>
+            <Image src={lizzyGif} alt="lizzy" width={480} height={480} className="image" unoptimized={true}/>
+            <h1 style={{marginLeft: "10vw"}}>Rest in peace Lizzy</h1>
+          </div>
         </div>
         <Footer />
       </>

@@ -17,7 +17,7 @@
 #            `\_|                   (,~~ 
 #                                    \~\
 #                                     ~~
-# Jednorożec ( ͡° ͜ʖ ͡°)
+# Jednorożec
 
 User-agent: *
 Disallow: /*
