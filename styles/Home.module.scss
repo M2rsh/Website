@@ -1,4 +1,21 @@
+@import "mixins";
+
 .container {
   padding: 0 2rem;
-  text-align: center;
+}
+
+.child {
+  height: 90vh
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 14vh;
+  @include mobile {
+    margin-top: 20vh;
+  }
+
 }

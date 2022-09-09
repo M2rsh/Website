@@ -15,15 +15,21 @@ export default class Home extends React.Component {
           <link rel="icon" href="/favicon.svg" />
           <meta content="In Development" property="og:title" />
           <meta content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!" property="og:description" />
-          <meta content="#b54842" data-react-helmet="true" name="theme-color" />
+          <meta content="#490b3d;" data-react-helmet="true" name="theme-color" />
         </Head>
         <Header />
         <div className={styles.container}>
-          <br/>
-          <div style={{ display: "flex", alignItems: "center", alignContent: "center", justifyContent: "center",  }}>
-            <Image src={lizzyGif} alt="lizzy" width={480} height={480} className="image" unoptimized={true}/>
-            <h1 style={{marginLeft: "10vw"}}>Rest in peace Lizzy</h1>
-          </div>
+          <section className={styles.child}>
+            <div className={styles.main}>
+              <Image src={lizzyGif} alt="lizzy" width={480} height={480} className="image" unoptimized={true} />
+              <h1 style={{ marginLeft: "10vw", fontSize: "4vw" }}>Rest in peace Lizzy</h1>
+            </div>
+          </section>
+          <section className={styles.child}>
+            <div style={{textAlign: "center"}}>
+              <p>In Development</p>
+            </div>
+          </section>
         </div>
         <Footer />
       </>
