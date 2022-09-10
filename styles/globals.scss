@@ -1,5 +1,6 @@
 @import "mixins";
 
+
 html,
 body {
   padding: 0;
@@ -8,6 +9,7 @@ body {
   background-color: $base1;
   color: $colour0;
   height: 100%;
+  overflow-y: hidden;
 }
 
 

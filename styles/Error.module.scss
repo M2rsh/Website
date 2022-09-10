@@ -10,9 +10,9 @@
     text-align: center;
     font-size: 2rem;
     white-space: nowrap;
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 
     .returnButton {
@@ -49,8 +49,9 @@
         color: $colour9;
         font-weight: bolder;
     }
+
     .errorMessage {
         color: $colour0;
     }
-}
 
+}
