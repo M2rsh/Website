@@ -19,3 +19,31 @@
   }
 
 }
+
+#sec1 {
+  height: auto;
+  padding-bottom: 20vh;
+  width: 100%;
+
+  @include mobile {
+    padding-bottom: 10vh;
+  }
+  .text {
+    display: flex;
+    @media (max-width: 1600px) {
+      flex-direction: column;
+    }
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  .container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+}
