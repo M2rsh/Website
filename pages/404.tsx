@@ -3,6 +3,8 @@ import styles from "../styles/Error.module.scss";
 import { useReward } from "react-rewards";
 
 //* Confetti resizes screen width and i have no idea how to fix it (mainly on mobile) *//
+//* I WAS USING WRONG FUCKING AXIS ON OVERFLOW WHAT THE FUCK *//
+// This comments will stay here to document my absolute fucking stupidity
 
 export default function NotFound() {
   const { reward } = useReward("confetti", "emoji", {
