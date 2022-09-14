@@ -39,7 +39,7 @@ export default function Home() {
               unoptimized={true}
             />
             <h1 style={{ marginLeft: "10vw", fontSize: "4vw" }}>
-              Rest in peace Lizzy
+              Rest in Peace Lizzy
             </h1>
           </div>
         </section>
