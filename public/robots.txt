@@ -20,5 +20,5 @@
 # Jednorożec
 
 User-agent: *
-Allow: /$
-Disallow: /
+Allow: /
+Disallow: /404
