@@ -1,21 +1,26 @@
 @import "mixins";
 
 .footer {
- 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.5rem 1rem;
   background-color: $base1;
   border-top: 1px solid $base0;
   bottom: 0;
-
   .items {
-    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 8%;
-    padding-right: 8%;
+    width: 90vw;
   }
+  .redirectIcons {
+    display: flex;
+    column-gap: 1rem;
+  }
+}
+
+.bar {
+  border-width: 10px 0 0;
+  border-top-style: solid;
+  -o-border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
 }

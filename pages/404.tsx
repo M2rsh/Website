@@ -21,10 +21,13 @@ export default function NotFound() {
       <Head>
         <title>404 | Not Found</title>
         <meta name="description" content="404 | Not Found" />
-        <link rel="icon" href="/favicon.svg" />
         <meta content="404 | Not Found" property="og:title" />
         <meta content="Page not found." property="og:description" />
         <meta content="#b54842" data-react-helmet="true" name="theme-color" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
       </Head>
       <div className={styles.container}>
         <div className={styles.confetti}>

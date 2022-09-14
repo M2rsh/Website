@@ -15,13 +15,16 @@ export default function Home() {
           name="description"
           content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!"
         />
-        <link rel="icon" href="/favicon.svg" />
         <meta content="In Development" property="og:title" />
         <meta
           content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!"
           property="og:description"
         />
         <meta content="#490b3d;" data-react-helmet="true" name="theme-color" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
       </Head>
       <Header />
       <div className={styles.container}>
@@ -55,7 +58,7 @@ export default function Home() {
               unoptimized={true}
               alt="Walter gif"
               src="https://media.giphy.com/media/5QlwTKQ3kq3N6/giphy.gif"
-              width={600}
+              width={660}
               height={400}
               className="image"
               layout="intrinsic"

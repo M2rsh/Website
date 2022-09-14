@@ -97,7 +97,7 @@
        height="1024"
        x="0"
        y="0"
-       style="fill:#373a36;fill-opacity:1"
+       style="fill:#201d18;fill-opacity:1"
        inkscape:path-effect="#path-effect888"
        d="m 250,0 h 524 a 250,250 45 0 1 250,250 V 774 A 250,250 135 0 1 774,1024 H 250 A 250,250 45 0 1 0,774 V 250 A 250,250 135 0 1 250,0 Z"
        sodipodi:type="rect" />

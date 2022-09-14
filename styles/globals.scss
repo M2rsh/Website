@@ -14,8 +14,12 @@ body {
 
 
 a {
-  color: inherit;
+  color: $colour4;
   text-decoration: none;
+  transition: color .1s linear;
+  &:hover {
+    color: $colour1;
+  }
 }
 
 .container {

@@ -7,6 +7,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <>
+        <div className={styles.bar}/>
         <div className={styles.header}>
           <div className={styles.items}>
             <span style={{ display: "flex" }}>
