@@ -13,11 +13,11 @@ export default function Home() {
         <title>M2rsh</title>
         <meta
           name="description"
-          content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!"
+          content="In development."
         />
-        <meta content="In Development" property="og:title" />
+        <meta content="M2rsh's Website" property="og:title" />
         <meta
-          content="What sound does monkey make? That's right! It's uuaa AAAAA AAA AAAAAAAAAAAA UUA AAA!!"
+          content="In development."
           property="og:description"
         />
         <meta content="#490b3d;" data-react-helmet="true" name="theme-color" />
