@@ -10,6 +10,7 @@ body {
   color: $colour0;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: overlay;
 }
 
 
@@ -35,4 +36,21 @@ a {
 .image {
   border: 2px solid $base0 !important;
   border-radius: 5px;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #201d1844;
+  border-radius: 5px;
+  &:hover {
+    background: #201d18e1;
+  }
 }
