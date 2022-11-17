@@ -51,10 +51,16 @@
           &:hover {
             border-color: $fg1;
           }
-
-          @media ( max-width: 1350px ) {
-            width: 80vw;
+          @include mobile {
             font-size: 1em;
+            width: 80vw;
+          }
+          @media only screen and (max-width: 1350px) and (min-width: 1060px) {
+            font-size: 1.4em;
+            width: 50vw;
+          }
+          @media only screen and (max-width: 1060px) and (min-width: $screen) {
+            font-size: 1.05em;
           }
         }
       }
