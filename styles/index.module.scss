@@ -35,32 +35,39 @@
           }
         }
       }
-      .text_layer {
+      .page_layer {
         display: flex;
         justify-content: center;
-        .text {
-          margin-bottom: 20vh;
-          width: 50vw;
-          background-color: $bg1;
-          border-radius: 10px;
-          padding: 20px;
-          border: 1px $bg3 solid;
-          transition: border-color 1s cubic-bezier(0.03, 0.86, 0.37, 0.33);
-          font-size: 1.5em;
 
-          &:hover {
-            border-color: $fg1;
-          }
-          @include mobile {
-            font-size: 1em;
-            width: 80vw;
-          }
-          @media only screen and (max-width: 1350px) and (min-width: 1060px) {
-            font-size: 1.4em;
+        .page {
+          width: 100%;
+          height: 100%;
+          background-color: $bg;
+          padding: 25px;
+          display: flex;
+          justify-content: center;
+          border-top: 1px $bg2 solid;
+          .text {
+            margin-bottom: 20vh;
+            margin-top: 10vh;
             width: 50vw;
-          }
-          @media only screen and (max-width: 1060px) and (min-width: $screen) {
-            font-size: 1.05em;
+            background-color: $bg;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px $bg3 solid;
+            transition: border-color 1s cubic-bezier(0.03, 0.86, 0.37, 0.33);
+            font-size: 1.5em;
+            @include mobile {
+              font-size: 1em;
+              width: 80vw;
+            }
+            @media only screen and (max-width: 1350px) and (min-width: 1060px) {
+              font-size: 1.4em;
+              width: 50vw;
+            }
+            @media only screen and (max-width: 1060px) and (min-width: $screen) {
+              font-size: 1.05em;
+            }
           }
         }
       }
