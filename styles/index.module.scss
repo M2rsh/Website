@@ -52,7 +52,7 @@
             border-color: $fg1;
           }
 
-          @include mobile {
+          @media ( max-width: 1350px ) {
             width: 80vw;
             font-size: 1em;
           }
