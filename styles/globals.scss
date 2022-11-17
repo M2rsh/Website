@@ -1,56 +1,34 @@
 @import "mixins";
-
+@import "colours";
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: $base1;
-  color: $colour0;
+  font-family: "Poppins", sans-serif;
+  color: $fg;
+  background: $bg;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: overlay;
+  width: 100%;
+  @include mobile {
+    overscroll-behavior-y: contain;
+  }
 }
-
 
 a {
-  color: $colour4;
   text-decoration: none;
-  transition: color .1s linear;
-  &:hover {
-    color: $colour1;
+  color: $dpurple;
+  .text {
+    padding: 3px;
+    border-radius: 10px;
+    transition: color .7s cubic-bezier(0.03, 0.86, 0.37, 0.33);
+    &:hover {
+      color: $purple;
+    }
   }
 }
 
-.container {
-  padding: 0 2rem;
-}
-
-.emoji {
-  position: relative;
-  height: 1em;
-  top: 2.5px;
-}
-
-.image {
-  border: 2px solid $base0 !important;
-  border-radius: 5px;
-}
-
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-track {
-  display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #201d1844;
-  border-radius: 5px;
-  &:hover {
-    background: #201d18e1;
-  }
+.twemoji {
+  size: 1em;
+  translate: 0 0.2em;
 }

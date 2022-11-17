@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Beta Website</h1>
+<h1>Website</h1>
 
 <a href="https://app.netlify.com/sites/m2rsh-beta/deploys">
     <img src="https://api.netlify.com/api/v1/badges/41df5122-9375-41d6-9497-4cab7a7a2b99/deploy-status" alt="Netlify Status" />
@@ -15,12 +15,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn install && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

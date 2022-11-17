@@ -11,8 +11,6 @@ module.exports = {
       },
     ];
   },
-  images: {
-    domains: ['media.giphy.com']
-  },
   reactStrictMode: true,
+  swcMinify: true,
 };
