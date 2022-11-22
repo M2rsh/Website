@@ -10,9 +10,6 @@ body {
   background: $bg;
   height: 100%;
   width: 100%;
-  @include mobile {
-    overscroll-behavior-y: contain;
-  }
 }
 
 a {
@@ -31,4 +28,21 @@ a {
 .twemoji {
   size: 1em;
   translate: 0 0.2em;
+}
+
+::-webkit-scrollbar {
+  position: fixed;
+  width: .6em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $bg0_s;
+  margin-block: 15px;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $teal;
+  border-radius: 25px;
+  border: .15em solid $bg0_s;
 }

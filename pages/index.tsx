@@ -1,12 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/index.module.scss";
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { Link as ScrollLink } from "react-scroll";
 import { RiArrowDownSLine } from "react-icons/ri";
 
 export default function Home() {
-  const ref = useRef<IParallax>(null!);
+
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -16,77 +23,55 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className={styles.main}>
-        <Parallax pages={2} ref={ref} className={styles.parallax}>
-          <ParallaxLayer
-            className={styles.logo}
-            speed={-0.2}
-            offset={0}
-            style={{ height: "auto" }}
-            factor={0.6}
-          >
-            <Image src="/favicon.svg" alt="Logo" width={240} height={240} />
-          </ParallaxLayer>
+        <div
+          className={styles.logo}
+          style={{ transform: `translateY(${offsetY * 0.4}px)` }}
+        >
+          <Image src="/favicon.svg" alt="Logo" width={240} height={240} />
 
-          <ParallaxLayer
-            className={styles.arrow_layer}
-            speed={-0.16}
-            offset={0.6}
-            style={{ height: "auto" }}
+          <ScrollLink
+            to="main"
+            style={{ transform: `translateY(${offsetY * -0.055}px)` }}
+            smooth={true}
+            className={styles.link}
           >
-            <RiArrowDownSLine
-              className={styles.arrow}
-              onClick={() => ref.current.scrollTo(0.9)}
-            />
-          </ParallaxLayer>
+            <RiArrowDownSLine />
+          </ScrollLink>
+        </div>
 
-          <ParallaxLayer
-            className={styles.page_layer}
-            speed={0.1}
-            offset={0.95}
-            style={{ height: "auto" }}
-            factor={2.5}
-          >
-            <div className={styles.page}>
-              <div style={{ height: "auto" }}>
-                <div className={styles.text}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Diam maecenas sed enim ut. Nullam eget felis eget
-                    nunc lobortis mattis aliquam faucibus purus. Risus sed
-                    vulputate odio ut enim blandit volutpat maecenas. Curabitur
-                    vitae nunc sed velit dignissim sodales ut eu sem. Amet
-                    consectetur adipiscing elit pellentesque habitant morbi
-                    tristique senectus et. Eu volutpat odio facilisis mauris
-                    sit. Volutpat consequat mauris nunc congue nisi vitae
-                    suscipit. Auctor augue mauris augue neque gravida in. Vitae
-                    tempus quam pellentesque nec nam aliquam. Blandit volutpat
-                    maecenas volutpat blandit aliquam etiam erat velit
-                    scelerisque. Tortor posuere ac ut consequat semper viverra
-                    nam libero. Morbi tristique senectus et netus. Id aliquet
-                    lectus proin nibh nisl. Neque viverra justo nec ultrices
-                    dui. Et malesuada fames ac turpis egestas. Viverra orci
-                    sagittis eu volutpat odio. Tempor orci eu lobortis elementum
-                    nibh tellus molestie. Ac auctor augue mauris augue neque
-                    gravida in fermentum. Morbi non arcu risus quis.
-                  </p>
+        <div className={styles.page} id="main">
+          <div className={styles.text}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
+              maecenas sed enim ut. Nullam eget felis eget nunc lobortis mattis
+              aliquam faucibus purus. Risus sed vulputate odio ut enim blandit
+              volutpat maecenas. Curabitur vitae nunc sed velit dignissim
+              sodales ut eu sem. Amet consectetur adipiscing elit pellentesque
+              habitant morbi tristique senectus et. Eu volutpat odio facilisis
+              mauris sit. Volutpat consequat mauris nunc congue nisi vitae
+              suscipit. Auctor augue mauris augue neque gravida in. Vitae tempus
+              quam pellentesque nec nam aliquam. Blandit volutpat maecenas
+              volutpat blandit aliquam etiam erat velit scelerisque. Tortor
+              posuere ac ut consequat semper viverra nam libero. Morbi tristique
+              senectus et netus. Id aliquet lectus proin nibh nisl. Neque
+              viverra justo nec ultrices dui. Et malesuada fames ac turpis
+              egestas. Viverra orci sagittis eu volutpat odio. Tempor orci eu
+              lobortis elementum nibh tellus molestie. Ac auctor augue mauris
+              augue neque gravida in fermentum. Morbi non arcu risus quis.
+            </p>
 
-                  <span
-                    style={{ display: "flex", justifyContent: "space-around" }}
-                  >
-                    <a
-                      href="https://github.com/M2rsh"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <p className="text">Github</p>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </ParallaxLayer>
-        </Parallax>
+            <span style={{ display: "flex", justifyContent: "space-around" }}>
+              <a
+                href="https://github.com/M2rsh"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="text">Github</p>
+              </a>
+            </span>
+          </div>
+        </div>
       </main>
     </div>
   );
