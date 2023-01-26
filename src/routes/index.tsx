@@ -5,18 +5,11 @@ export default function Home() {
   return (
     <main>
       <Title>Hello World</Title>
+      <p style={{"font-size": "3em", "margin-top": "20%", "font-weight": "300"}}>
+         Rewriting since 26/01/2023
+      </p>
       <h1>Hello world!</h1>
       <Counter />
-      <p>
-        Visit{" "}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{" "}
-        to learn how to build SolidStart apps.
-      </p>
-      <p>
-        Rewriting since 26//01/2023
-      </p>
     </main>
   );
 }
