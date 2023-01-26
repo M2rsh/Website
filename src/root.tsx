@@ -12,7 +12,7 @@ import {
   Scripts,
   Title,
 } from "solid-start";
-import "./root.css";
+import "./root.scss";
 
 export default function Root() {
   return (
@@ -25,8 +25,6 @@ export default function Root() {
       <Body>
         <Suspense>
           <ErrorBoundary>
-            <A href="/">Index</A>
-            <A href="/about">About</A>
             <Routes>
               <FileRoutes />
             </Routes>

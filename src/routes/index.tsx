@@ -14,6 +14,9 @@ export default function Home() {
         </a>{" "}
         to learn how to build SolidStart apps.
       </p>
+      <p>
+        Rewriting since 26//01/2023
+      </p>
     </main>
   );
 }
