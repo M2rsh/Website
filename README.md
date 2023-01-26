@@ -1,45 +1,30 @@
-<div align="center">
-<h1>Website</h1>
+# SolidStart
 
-<a href="https://app.netlify.com/sites/m2rsh-beta/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/41df5122-9375-41d6-9497-4cab7a7a2b99/deploy-status" alt="Netlify Status" />
-</a>
+Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
 
-<a href="https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml">
-    <img src="https://github.com/M2rsh/Website-Beta/actions/workflows/node.js.yml/badge.svg" alt="Node.js CI" />
-</a>
-
-</div>
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-Install dependencies and run the development server:
+## Creating a project
 
 ```bash
-yarn install && yarn dev
+# create a new project in the current directory
+npm init solid@latest
+
+# create a new project in my-app
+npm init solid@latest my-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Developing
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Learn More
+## Building
 
-To learn more about Next.js, take a look at the following resources:
+Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
