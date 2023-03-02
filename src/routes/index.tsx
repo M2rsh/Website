@@ -1,20 +1,9 @@
-import { Title } from "solid-start";
-import Counter from "~/components/Counter";
+import styles from '~/styles/index.module.scss'
 
-export default function Home() {
+export default function Index() {
   return (
-    <main>
-      <Title>Hello World</Title>
-      <p
-        style={{
-          "font-size": "3em",
-          "margin-top": "20%",
-          "font-weight": "300",
-        }}
-      >
-        Hi, I'm a fucking retard
-      </p>
-      <Counter />
+    <main class={styles.main}>
+      lol
     </main>
   );
 }

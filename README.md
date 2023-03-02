@@ -1,30 +1,36 @@
-# SolidStart
+# <p align="center"> My Website </p>
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+<p align="center">
+    <img href="https://app.netlify.com/sites/gleaming-cajeta-165c3c/deploys" 
+         src="https://api.netlify.com/api/v1/badges/e27e7d1a-c797-44e8-b838-a55216b060f5/deploy-status"     alt="Netlify Status Badge"/>
+    <img href="https://github.com/M2rsh/Website/actions/workflows/main.yml"
+         src="https://github.com/M2rsh/Website/actions/workflows/main.yml/badge.svg"
+         alt="Github CI">
+</p>
 
-## Creating a project
+<br/>
 
+## About
+
+I'm bored as fuck
+
+<br/>
+
+## Running
+Install packages with
 ```bash
-# create a new project in the current directory
-npm init solid@latest
+yarn install
+```
+<br/>
 
-# create a new project in my-app
-npm init solid@latest my-app
+Running
+```bash
+yarn dev
+```
+<br/>
+
+Building
+```bash
+yarn build
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
