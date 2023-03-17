@@ -1,6 +1,7 @@
 // @refresh reload
 import { Suspense } from "solid-js";
 import {
+  A,
   Body,
   ErrorBoundary,
   FileRoutes,
@@ -17,7 +18,7 @@ export default function Root() {
   return (
     <Html lang="en">
       <Head>
-        <Title>M2rsh_</Title>
+        <Title>SolidStart - Bare</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

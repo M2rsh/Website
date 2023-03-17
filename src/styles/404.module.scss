@@ -1,6 +1,32 @@
-.link {
-    color: #ff0000;
-}
-button {
-    color: red;
+@import '../colours.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+
+    .notfound {
+        margin: 0;
+        font-weight: 300;
+        font-size: 2.6em;
+    }
+
+    .shrug {
+        margin-top: 0;
+        color: $ac3;
+        font-size: small;
+    }
+
+    .button {
+        text-transform: uppercase;
+        font-size: large;
+        font-weight: 500;
+        padding: 12px;
+        border: 2px solid;
+    }
 }
