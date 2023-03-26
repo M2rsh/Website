@@ -1,11 +1,13 @@
 @import './colours.scss';
+@import './mixins';
 
-html, body {height:100%;} 
+html, body {min-height:100%;} 
 
 body {
   //font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
   //  'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: monospace;
+  font-size: 1.2em;
   background-color: $bg;
   color: $fg;
 }
@@ -24,26 +26,24 @@ button {
   }
 }
 
+.stylized_text {
+  max-width:  60%;
+  text-align: left;
 
+  @media only screen and (max-width: 1200px) {
+    max-width: 80%;
+  }
 
-
+  @include mobile {
+    max-width: 90%;
+  }
+}
 
 a {
   margin-right: 1rem;
 }
 
 p {
-  max-width: 14rem;
   margin: 2rem auto;
   line-height: 1.35;
-}
-
-@media (min-width: 480px) {
-  h1 {
-    max-width: none;
-  }
-
-  p {
-    max-width: none;
-  }
 }
