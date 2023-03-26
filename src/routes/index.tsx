@@ -6,7 +6,6 @@ export default function Index() {
     <div class={styles.main}>
       <Title>Hello World</Title>
       <h1>Hello world!</h1>
-
     </div>
   );
 }

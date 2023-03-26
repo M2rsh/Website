@@ -1,12 +1,11 @@
 @import './colours.scss';
 
-html, body {
-  min-height: 98vh;
-}
+html, body {height:100%;} 
 
 body {
-  font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  //font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
+  //  'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: monospace;
   background-color: $bg;
   color: $fg;
 }
@@ -14,10 +13,9 @@ body {
 button {
   color: $fg;
   background-color: transparent;
-  border-radius: 10px;
   border: 2px solid $fg;
   cursor: pointer;
-  transition: color 0.4s, border-color 0.4s, background-color 0.4s;
+  //transition: color 0.4s, border-color 0.4s, background-color 0.4s;
 
   &:hover {
       color: $bg;

@@ -1,6 +1,12 @@
 @import '../colours.scss';
 
+body {
+    overflow: hidden;
+}
+
 .main {
+    font-family: monospace;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,23 +16,40 @@
     padding: 1em;
     margin: 0 auto;
 
-    .notfound {
-        margin: 0;
-        font-weight: 300;
-        font-size: 2.6em;
-    }
+    .maintext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fourofour {
+            margin: 0;
+            color: $coral;
+            background-color: $bg0;
+            width: fit-content;
+            font-size: 1.1em;
+            padding: 2px;
+        }
 
-    .shrug {
-        margin-top: 0;
-        color: $ac3;
-        font-size: small;
-    }
+        .pagenotfound {
+            margin: 0;
+            font-weight: 300;
+            font-size: 4em;
+        }
 
+        .shrug {
+            margin-top: 0;
+            color: $ac3;
+            font-size: 1.1em;
+        }
+    }
     .button {
         text-transform: uppercase;
         font-size: large;
         font-weight: 500;
         padding: 12px;
         border: 2px solid;
+
+        &:active {
+            scale: 0.9; 
+        }
     }
 }
