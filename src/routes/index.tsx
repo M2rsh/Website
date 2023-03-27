@@ -1,10 +1,14 @@
 import { Title } from "solid-start";
 import styles from '~/styles/index.module.scss';
+import icon from "~/images/icon.svg";
+import cat from "~/images/cat.svg";
 
 export default function Index() {
   return (
     <div class={styles.main}>
       <Title>Hello World</Title>
+
+      <img src={icon} alt="logo"/>
       <h1>Hello world!</h1>
 
       <p class="stylized_text">
@@ -16,14 +20,14 @@ export default function Index() {
       <p class="stylized_text">
       Magna eget est lorem ipsum dolor sit amet. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Aliquet nibh praesent tristique magna sit amet purus. Ultricies leo integer malesuada nunc vel risus. Ultrices tincidunt arcu non sodales neque. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Mattis aliquam faucibus purus in massa. Eu ultrices vitae auctor eu augue. Vel fringilla est ullamcorper eget nulla facilisi. Molestie ac feugiat sed lectus. Egestas congue quisque egestas diam in arcu cursus euismod quis. Curabitur gravida arcu ac tortor dignissim convallis aenean. Mi ipsum faucibus vitae aliquet nec. Ornare massa eget egestas purus viverra accumsan in nisl. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Tempor nec feugiat nisl pretium fusce id. Odio aenean sed adipiscing diam.
       </p>
-
       <p class="stylized_text">
       Commodo ullamcorper a lacus vestibulum. Consectetur adipiscing elit ut aliquam purus sit amet. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Non odio euismod lacinia at quis. Justo nec ultrices dui sapien eget mi proin sed. Scelerisque eu ultrices vitae auctor eu augue. Accumsan tortor posuere ac ut consequat semper viverra nam. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Gravida rutrum quisque non tellus orci ac auctor augue. Viverra adipiscing at in tellus integer feugiat. Et molestie ac feugiat sed. Aenean et tortor at risus viverra adipiscing. Quisque egestas diam in arcu cursus euismod. Senectus et netus et malesuada fames ac turpis egestas maecenas. Eget lorem dolor sed viverra ipsum nunc aliquet.
       </p>
-
       <p class="stylized_text">
       Consectetur adipiscing elit duis tristique. At augue eget arcu dictum varius duis at consectetur lorem. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Massa tincidunt dui ut ornare. Vel risus commodo viverra maecenas accumsan lacus vel. Libero justo laoreet sit amet cursus sit. At in tellus integer feugiat scelerisque varius. Leo duis ut diam quam nulla porttitor massa. Pharetra et ultrices neque ornare aenean euismod. A erat nam at lectus urna duis. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Fringilla ut morbi tincidunt augue interdum. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
       </p>
+
+      <img src={cat} alt="cat" width={200}/>
     </div>
   );
 }
