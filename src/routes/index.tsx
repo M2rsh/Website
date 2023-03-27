@@ -27,7 +27,7 @@ export default function Index() {
       Consectetur adipiscing elit duis tristique. At augue eget arcu dictum varius duis at consectetur lorem. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Massa tincidunt dui ut ornare. Vel risus commodo viverra maecenas accumsan lacus vel. Libero justo laoreet sit amet cursus sit. At in tellus integer feugiat scelerisque varius. Leo duis ut diam quam nulla porttitor massa. Pharetra et ultrices neque ornare aenean euismod. A erat nam at lectus urna duis. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Donec massa sapien faucibus et molestie ac feugiat sed lectus. Fringilla ut morbi tincidunt augue interdum. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
       </p>
 
-      <img src={cat} alt="cat" width={200}/>
+      <img src={cat} alt="cat" width={150}/>
     </div>
   );
 }
