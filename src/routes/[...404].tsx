@@ -11,7 +11,7 @@ export default function NotFound() {
       <Title>Page not found</Title>
       <HttpStatusCode code={404} />
       <div class={styles.maintext}>
-        <h2 class={styles.fourofour}>import &lbrace; 404 &rbrace;</h2>
+        {/*<h2 class={styles.fourofour}>import &lbrace; 404 &rbrace;</h2>*/}
         <h1 class={styles.pagenotfound}>/ Page not found /</h1>
         <p class={styles.shrug}> ¯\\_(ツ)_/¯</p>
       </div>
