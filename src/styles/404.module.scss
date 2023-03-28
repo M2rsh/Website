@@ -53,6 +53,7 @@
         }
     }
     .button {
+        @extend %button !optional;
         text-transform: uppercase;
         font-size: large;
         font-weight: 500;

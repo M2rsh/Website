@@ -1,6 +1,6 @@
 import { Title } from "solid-start";
 import styles from "~/styles/index.module.scss";
-import cat from "~/images/cat_ascii_smol.svg";
+import cat from "~/images/cat_ascii.svg";
 import { RiSystemArrowDownSLine } from "solid-icons/ri";
 import HorizontalLine from "~/components/HorizontalLine";
 
@@ -10,7 +10,7 @@ export default function Index() {
       <Title>Hello World</Title>
 
       <div class={styles.icantcomeupwithaname}>
-        <img src={cat} alt="cat" />
+        <img src={cat} alt="cat" width={500}/>
         <a href={'#'+styles.content} > {/*Temporary Solution*/}
           <RiSystemArrowDownSLine size={50} class={styles.arrowdown} />
         </a>

@@ -16,7 +16,7 @@ body {
   color: $fg;
 }
 
-button {
+button, .button {
   color: $fg;
   background-color: transparent;
   border: 2px solid $fg;
@@ -29,6 +29,7 @@ button {
     border-color: $ac3;
   }
 }
+
 
 .stylized_text {
   max-width: 60%;
@@ -46,7 +47,8 @@ button {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.4s linear;
+  padding: 0;
+  margin: 0;
 }
 
 a:hover {
