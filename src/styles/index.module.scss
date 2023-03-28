@@ -3,3 +3,19 @@
     padding: 1em;
     margin: 0 auto;
 }
+
+.icantcomeupwithaname {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .arrowdown {
+        margin: 50px;
+    }
+}
+
+#content {
+    padding-top: 25px;
+}
