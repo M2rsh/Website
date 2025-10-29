@@ -10,7 +10,7 @@ function Home() {
           <div className={styles.parallax_layer} id={styles.layer1}>
             <div className={styles.container}>
               <p>Intro screen</p>
-              <p className={styles.smoltext}>&lt;!-- Work in progress --&gt;</p>
+              <p className={styles.smoltext}>&lt;!-- Work in regress --&gt;</p>
               <Link to="main" smooth={true} duration={1400} containerId="parallax_wrapper" className={styles.link}><AiFillCaretDown /></Link>
             </div>
           </div>
