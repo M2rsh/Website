@@ -1,0 +1,144 @@
+// scale = 1-(z translate / perspective)
+@import "../mixins";
+
+$perspective: 300;
+
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:root {
+  overflow-y: hidden;
+}
+
+.parallax_wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+
+  .parallax_group {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 100vh;
+    width: 100vw;
+
+    .parallax_layer {
+      position: absolute;
+      inset: 0;
+      height: 100vh;
+    }
+
+    #layer1 {
+      background-color: #1f1d2e;
+      transform: translateZ(180px) scale(calc(1 - (180 / $perspective)));
+      @include align-center;
+      z-index: 7;
+      //padding-top: 30px;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          transform: translateY(-30%);
+        }
+
+        .smoltext {
+          font-size: 0.85em;
+          color: #6e6a86;
+        }
+        .link {
+          font-size: 2.4em;
+          margin-top: 1em;
+          cursor: pointer;
+
+          transition:
+            cubic-bezier(0.075, 0.82, 0.165, 1) color 0.5s,
+            transform 0.5s;
+
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          &:hover {
+            color: #c4a7e7;
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+
+    #layer2 {
+      background-color: #D52D00;
+      transform: translateZ(154.2px) scale(calc(1 - (154.2 / $perspective)));
+      z-index: 6;
+    }
+
+    #layer3 {
+      background-color: #EF7627;
+      transform: translateZ(128.5px) scale(calc(1 - (128.5 / $perspective)));
+      z-index: 5;
+    }
+
+    #layer4 {
+      background-color: #FF9A56;
+      transform: translateZ(102.8px) scale(calc(1 - (102.8 / $perspective)));
+      z-index: 4;
+    }
+
+    #layer5 {
+      background-color: #ffffff;
+      transform: translateZ(77.1px) scale(calc(1 - (77.1 / $perspective)));
+      z-index: 3;
+    }
+
+    #layer6 {
+      background-color: #D162A4;
+      transform: translateZ(51.4px) scale(calc(1 - (51.4 / $perspective)));
+      z-index: 2;
+    }
+
+    #layer7 {
+      background-color: #B55690;
+      transform: translateZ(25.7px) scale(calc(1 - (25.7 / $perspective)));
+      z-index: 1;
+    }
+
+    #layer8 {
+      background-color: #A30262;
+    }
+  }
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  background-color: #191724;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .text_container {
+      width: 80vw;
+      margin-block: 50px;
+      padding-bottom: 50px;
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
+    }
+  }
+}

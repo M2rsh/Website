@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "./mixins";
+
+:root {
+  font-family: "JetBrains mono", monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #e0def4;
+  background-color: #191724;
+
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: dashed underline;
+  color: #c4a7e7;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) color 0.5s;
+
+  &:hover {
+    color: #ebbcba;
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191724;
+  border-left: 1px #1f1d2e solid;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #524f67;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #403d52;
+}

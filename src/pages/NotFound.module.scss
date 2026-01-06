@@ -1,0 +1,55 @@
+@import "../mixins";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+
+  @include mobile {
+    font-size: 2.6vw;
+  }
+
+  .maintext {
+    color: #eb6f92;
+  }
+
+  .subtext {
+    line-height: 0.2;
+    margin-bottom: 1em;
+    font-weight: 200;
+    font-size: 0.85em;
+    color: #6e6a86;
+  }
+
+  .mainbutton {
+    text-decoration: none;
+    margin-top: 1.2em;
+    padding: 1em;
+    padding-inline: 1.25em;
+    border: #21202e 2px solid;
+    color: #908caa;
+    text-transform: uppercase;
+
+    .smaller {
+      font-size: 0.7em;
+      position: relative;
+      top: -0.15em;
+    }
+
+    transition:
+      cubic-bezier(0.075, 0.82, 0.165, 1) border-color 0.5s,
+      color 0.5s,
+      transform 0.5s;
+
+    &:hover {
+      border-color: #26233a;
+      color: #e0def4;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
