@@ -40,7 +40,7 @@ function Home() {
               <p>Pulvinar mattis nunc sed blandit libero. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Risus ultricies tristique nulla aliquet enim tortor at. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Nunc id cursus metus aliquam eleifend mi. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. Consectetur purus ut faucibus pulvinar elementum. Aenean et tortor at risus viverra. Cursus mattis molestie a iaculis at erat. Erat velit scelerisque in dictum non. Eget duis at tellus at urna condimentum mattis pellentesque id. Vitae nunc sed velit dignissim. Nullam ac tortor vitae purus faucibus. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Viverra adipiscing at in tellus integer feugiat. Dignissim suspendisse in est ante in nibh. Pulvinar sapien et ligula ullamcorper. Augue neque gravida in fermentum et sollicitudin ac orci.</p>
               <br />
               <div className={styles.links}>
-                <a href="https://git.ciecierzyca.xyz/Ciecierzyca" target="_blank" rel="noopener noreferrer"><AiOutlineLink />Github</a>
+                <a href="https://git.ciecierzyca.xyz/Ciecierzyca" target="_blank" rel="noopener noreferrer"><AiOutlineLink />Forgejo (Git)</a>
                 <a href="https://git.ciecierzyca.xyz/Ciecierzyca/Website" target="_blank" rel="noopener noreferrer"><AiOutlineLink />Source</a>
               </div>
             </div>
