@@ -1,5 +1,5 @@
 // scale = 1-(z translate / perspective)
-@import "../mixins";
+@use "../mixins";
 
 $perspective: 300;
 
@@ -45,7 +45,7 @@ $perspective: 300;
         justify-content: center;
         align-items: center;
 
-        @include mobile {
+        @include mixins.mobile {
           transform: translateY(-30%);
         }
 
